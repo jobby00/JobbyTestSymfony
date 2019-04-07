@@ -19,4 +19,5 @@
 
 ##Jobby ignore#####
 /.env
+/.idea
 
