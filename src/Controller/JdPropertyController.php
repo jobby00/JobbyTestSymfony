@@ -29,8 +29,8 @@ class JdPropertyController extends AbstractController
     public function index(): Response
     {
         $property = $this->repository->findAllVisible();
-        dump($property);
         return $this->render('jd_property/property.html.twig', [
+            'property'              => $property,
             'current_menu'          => 'properties',
         ]);
     }

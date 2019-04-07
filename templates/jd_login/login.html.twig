@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Se connecter'%}
+
+{% block body %}
+    <div class="container mt-4">
+        <div class="jumbotron text-center">
+            {{ form_start(form) }}
+            <div class="row">
+                <div class="col-md-6">{{ form_row(form.username) }}</div>
+                <div class="col-md-6">{{ form_row(form.password) }}</div>
+            </div>
+            {{ form_widget(form) }}
+            <button class="btn btn-primary">Connexion</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}
